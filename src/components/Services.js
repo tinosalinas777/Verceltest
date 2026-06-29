@@ -2,62 +2,25 @@ import React, { useEffect, useRef } from 'react';
 
 const SERVICES = [
   {
-    icon: (
-      <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
-        <path d="M5 20 C5 20 10 8 20 8 C30 8 35 20 35 20" stroke="#00D4FF" strokeWidth="2" strokeLinecap="round"/>
-        <path d="M8 24 C8 24 12 14 20 14 C28 14 32 24 32 24" stroke="#00D4FF" strokeWidth="2" strokeLinecap="round" strokeOpacity="0.6"/>
-        <circle cx="20" cy="28" r="3" fill="#00D4FF"/>
-        <line x1="20" y1="31" x2="20" y2="36" stroke="#00D4FF" strokeWidth="2" strokeLinecap="round"/>
-        <line x1="16" y1="36" x2="24" y2="36" stroke="#00D4FF" strokeWidth="2" strokeLinecap="round"/>
-      </svg>
-    ),
+    icon: '/fibra1.png',
     title: 'Tendido de Fibra Óptica',
     desc: 'Instalación y tendido de cables de fibra óptica para redes de alta velocidad en entornos industriales, comerciales y residenciales.',
     features: ['Fibra monomodo y multimodo', 'Cables aéreos y subterráneos', 'Grandes extensiones de red'],
   },
   {
-    icon: (
-      <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
-        <circle cx="20" cy="20" r="5" fill="none" stroke="#00D4FF" strokeWidth="2"/>
-        <path d="M20 15 L20 5" stroke="#00D4FF" strokeWidth="2" strokeLinecap="round"/>
-        <path d="M20 35 L20 25" stroke="#00D4FF" strokeWidth="2" strokeLinecap="round" strokeOpacity="0.5"/>
-        <path d="M15 20 L5 20" stroke="#00D4FF" strokeWidth="2" strokeLinecap="round" strokeOpacity="0.5"/>
-        <path d="M35 20 L25 20" stroke="#00D4FF" strokeWidth="2" strokeLinecap="round"/>
-        <circle cx="20" cy="5" r="2" fill="#00D4FF"/>
-        <circle cx="35" cy="20" r="2" fill="#00D4FF"/>
-        <path d="M13 13 L7 7" stroke="#00D4FF" strokeWidth="2" strokeLinecap="round" strokeOpacity="0.4"/>
-        <path d="M27 27 L33 33" stroke="#00D4FF" strokeWidth="2" strokeLinecap="round" strokeOpacity="0.4"/>
-      </svg>
-    ),
+    icon: '/fibrafusion 1.png',
     title: 'Fusionado de Fibra Óptica',
     desc: 'Empalme y fusión de fibras con equipos de última tecnología para garantizar señales sin pérdidas y máxima continuidad de la red.',
     features: ['Fusión por arco eléctrico', 'Certificación de pérdidas OTDR', 'Empalmes mecánicos y ópticos'],
   },
   {
-    icon: (
-      <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
-        <rect x="8" y="14" width="18" height="13" rx="2" stroke="#00D4FF" strokeWidth="2"/>
-        <path d="M26 18 L34 14 L34 26 L26 22" stroke="#00D4FF" strokeWidth="2" strokeLinejoin="round"/>
-        <circle cx="17" cy="20" r="3" fill="none" stroke="#00D4FF" strokeWidth="1.5"/>
-        <line x1="12" y1="30" x2="28" y2="30" stroke="#00D4FF" strokeWidth="2" strokeLinecap="round"/>
-      </svg>
-    ),
+    icon: '/domo.png',
     title: 'Cámaras IP',
     desc: 'Diseño e instalación de sistemas de videovigilancia IP de alta resolución con acceso remoto desde cualquier dispositivo.',
     features: ['Resolución 4K / 8MP', 'Visión nocturna IR', 'Almacenamiento en NVR y nube'],
   },
   {
-    icon: (
-      <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
-        <rect x="6" y="8" width="28" height="20" rx="3" stroke="#00D4FF" strokeWidth="2"/>
-        <rect x="10" y="12" width="8" height="6" rx="1" fill="rgba(0,212,255,0.2)" stroke="#00D4FF" strokeWidth="1"/>
-        <rect x="22" y="12" width="8" height="6" rx="1" fill="rgba(0,212,255,0.2)" stroke="#00D4FF" strokeWidth="1"/>
-        <rect x="10" y="20" width="20" height="3" rx="1" fill="rgba(0,212,255,0.15)"/>
-        <line x1="14" y1="28" x2="14" y2="33" stroke="#00D4FF" strokeWidth="1.5" strokeLinecap="round"/>
-        <line x1="26" y1="28" x2="26" y2="33" stroke="#00D4FF" strokeWidth="1.5" strokeLinecap="round"/>
-        <line x1="10" y1="33" x2="30" y2="33" stroke="#00D4FF" strokeWidth="2" strokeLinecap="round"/>
-      </svg>
-    ),
+    icon: '/nube.png',
     title: 'Sistemas IVMS',
     desc: 'Implementación de plataformas IVMS (Intelligent Video Management System) para gestión centralizada de múltiples cámaras y sitios.',
     features: ['Gestión multi-sitio', 'Alertas y detección inteligente', 'Compatibilidad Hikvision / Dahua'],
@@ -128,7 +91,18 @@ export default function Services() {
                 e.currentTarget.style.boxShadow = 'none';
               }}
             >
-              <div style={{ marginBottom: 20 }}>{s.icon}</div>
+              {/* Imagen del icono */}
+              <div style={{ marginBottom: 20 }}>
+                <img
+                  src={s.icon}
+                  alt={s.title}
+                  style={{
+                    width: 48,
+                    height: 48,
+                    objectFit: 'contain',
+                  }}
+                />
+              </div>
               <h3 style={{
                 fontFamily: 'Rajdhani, sans-serif', fontWeight: 700,
                 fontSize: 22, color: '#F0F4F8', marginBottom: 12,
