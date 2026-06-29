@@ -40,7 +40,7 @@ const CEOS = [
     initials: 'G',
     name: 'CEO - Gerente General',
     role: 'Fundador & Director Técnico',
-    bio: 'Especialista en redes de fibra óptica con más de 10 años liderand proyectos de infraestructura de telecomunicaciones para empresas del sector energético, industrial y corporativo.',
+    bio: 'Especialista en redes de fibra óptica con más de 10 años liderando proyectos de infraestructura de telecomunicaciones para empresas del sector energético, industrial y corporativo.',
     gradient: ['#0A3060', '#00D4FF'],
     photo: '/maty.jpeg',
   },
