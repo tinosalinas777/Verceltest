@@ -97,8 +97,8 @@ export default function Services() {
                   src={s.icon}
                   alt={s.title}
                   style={{
-                    width: 48,
-                    height: 48,
+                    width: 100,
+                    height: 100,
                     objectFit: 'contain',
                   }}
                 />
