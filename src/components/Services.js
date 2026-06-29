@@ -100,6 +100,8 @@ export default function Services() {
                     width: 100,
                     height: 100,
                     objectFit: 'contain',
+                    display: 'block',
+                    margin: '0 auto',
                   }}
                 />
               </div>
