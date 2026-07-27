@@ -38,7 +38,7 @@ const Avatar = ({ initials, gradient }) => (
 const CEOS = [
   {
     initials: 'G',
-    name: 'CEO - Gerente General',
+    name: 'CEO - Matias Soria',
     role: 'Fundador & Director Técnico',
     bio: 'Especialista en redes de fibra óptica con más de 10 años liderando proyectos de infraestructura de telecomunicaciones para empresas del sector energético, industrial y corporativo.',
     gradient: ['#0A3060', '#00D4FF'],
@@ -46,7 +46,7 @@ const CEOS = [
   },
   {
     initials: 'T',
-    name: 'CEO - Director de Operaciones',
+    name: 'CEO - Cristian Salinas',
     role: 'Cofundador & Sistemas de Seguridad',
     bio: 'Experto en sistemas de videovigilancia IP e IVMS, con amplia trayectoria en el diseño e implementación de soluciones de seguridad electrónica para industrias, comercios y edificios.',
     gradient: ['#1A0A40', '#7B2FFF'],
